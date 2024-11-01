@@ -1,0 +1,168 @@
+
+
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Potta+One&family=Zen+Maru+Gothic&display=swap'); 
+
+body{
+
+	.potta-one-regular {
+        font-family: "Potta One", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+	
+	margin: 0;           /* 外部距離設為0*/ 
+	background:url("02.jpg");  /* 背景圖片 */
+	background-size: cover ;  
+	background-attachment: fixed;   /* 固定背景圖片 */
+	text-align: center;  /*文字居中對齊*/
+	-webkit-text-size-adjust: 100%;   
+	background-position: right 30% bottom 75%;
+}       /*文字大小會達到易讀的大小，但是不會修改佈局*/
+
+/* 區塊設定 */
+header{
+	/* background: radial-gradient(circle, #f79292, #feb958);/* 背景色*/  
+
+    background-image:
+    linear-gradient(to bottom, rgba(217,167,199,0.6), 
+#ff771c99),
+    url('03.jpg');
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: right 30% bottom 75%;
+	padding-top: 10px;   /* 內距-上方，上方內部距離為10px*/ 
+}
+main{
+    font-family: "Potta One", serif;
+	background:rgba(254, 208, 142, 0.25); /* 背景透明色*/
+	padding: 30px;       /* 內距，內部距離設為30px*/ 
+	font-size: 16px;     /* 內文的字體大小設為16px*/ 
+	line-height: 2em;   /* 行間設為2個字高*/ 
+	color:#ffffff; 
+   }   /* 文字顏色設定*/
+
+footer{
+	background: radial-gradient(circle, #f79292, #feb958);/* 背景色*/
+	padding: 10px;     /* 內距，內部距離設為10px*/ 
+	font-size: 14px;     /* 內文的字體大小設為14px*/
+	color: #E4EEF7;    /* 文字顏色設定*/
+}
+/* 網站標題 */
+h1 {
+    font-family: "Potta One", serif;
+	font-size: 35px;    /* 內文的字體大小設為28px*/ 
+	color: #f6ff00;      /* 文字顏色設定*/ 
+	font-weight:700;     /* 文字粗細設定，100,300,400,500,700,700*/	 
+}
+/* 標題 */
+h4 {
+    font-family: "Potta One", serif;
+	font-size: 20px;     /* 內文的字體大小設為16px*/ 
+	color: #ffffff;      /* 文字顏色設定*/ 
+	font-weight: 300;   /* 文字粗細設定*/ 
+}
+
+a{
+	color: #ffffff; }       /* 超連結屬性的文字顏色設定*/
+ 
+a:hover{
+	color: #144f64;         /* 超連結『滑鼠滑過』文字顏色設定*/ 
+	text-decoration: none;  /* 超連結『滑鼠滑過』文字無底線裝飾效果*/ 
+}
+/* 導覽列 */
+.navigation ul {
+    background:#fc8210; /* 導覽列背景色*/ 
+    margin: 0;          /* 外部距離設為0*/ 
+    padding: 15px;       /* 內距，內部距離設為10px*/ 
+    text-align: center; /* 文字居中對齊*/ 
+
+
+}
+.navigation ul li {
+    list-style-type: none;   /* 取消項目清單符號*/ 
+    display: inline;        /* 使元素於同一行呈現（文字或圖片不換行）*/ 
+    margin: 0 8px;          /* 外部距離設定，上下0px,左右8px*/ 
+}
+.navigation ul li a {
+    color: #ffffff;          /* 導覽列超連結文字顏色設定*/ 
+    text-decoration: none;
+}   /* 導覽列超連結文字無底線裝飾效果*/
+
+.navigation ul li a:hover {
+    color: #62d5e8;              /* 導覽列超連結『滑鼠滑過』文字顏色設定*/ 
+    text-decoration: underline;
+}/* 導覽列超連結『滑鼠滑過』文字有底線裝飾效果*/
+
+
+
+#tabs{
+    font-family: "Potta One", serif;
+	width: 50%;       /* tabs 寬度設為50% */
+	margin:0px auto;  /* tabs 置中對齊 */
+}
+
+.ui-widget-content {
+    border: 1px solid #ebe3e3;         /* tabs 邊框設為寬1px灰色的實線 ，可自行修改 */
+    background: rgba(255, 249, 221, 0.6); /* tabs 底色 設定為淺藍色，不透明度60%*/
+    color: #222222;                    /* tabs 文字的顏色*/
+}
+
+h1 {
+    animation-duration: 3s;
+    animation-name: slideInUp;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navigation ul {
+	animation-duration: 2s;
+    animation-name: bounceInLeft ;
+
+}
+@keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(25px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+header{
+	animation-duration: 2s;
+    animation-name: bounceInLeft ;
+
+}
+@keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(25px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
