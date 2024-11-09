@@ -11,6 +11,10 @@ body{
         font-weight: 400;
         font-style: normal;
       }
+
+
+ 
+    
 	
 	margin: 0;           /* 外部距離設為0*/ 
 	background:url("02.jpg");  /* 背景圖片 */
@@ -19,6 +23,10 @@ body{
 	text-align: center;  /*文字居中對齊*/
 	-webkit-text-size-adjust: 100%;   
 	background-position: right 30% bottom 75%;
+
+
+      
+
 }       /*文字大小會達到易讀的大小，但是不會修改佈局*/
 
 /* 區塊設定 */
@@ -35,12 +43,18 @@ header{
 	padding-top: 10px;   /* 內距-上方，上方內部距離為10px*/ 
 }
 main{
+    
     font-family: "Potta One", serif;
 	background:rgba(254, 208, 142, 0.25); /* 背景透明色*/
 	padding: 30px;       /* 內距，內部距離設為30px*/ 
 	font-size: 16px;     /* 內文的字體大小設為16px*/ 
 	line-height: 2em;   /* 行間設為2個字高*/ 
 	color:#ffffff; 
+    width: 60%; /* 設定寬度，例如80%，可以依需求調整 */
+    margin: 20px auto; /* 讓元素水平置中 */
+    outline: 2px dashed #FFF; /* 外框白色虛線 */
+    outline-offset: -25px; /* 外框向內偏移 */
+    border-radius: 5px; /* 圓角 */
    }   /* 文字顏色設定*/
 
 footer{
